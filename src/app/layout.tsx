@@ -23,6 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        <title>Elixir</title>
+        <meta name="description" content="A minimalistic social app with communities" />
+        <link rel="icon" href="/Tipee.png" />
+      </head>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col h-full`}> 
         <AuthProvider>
           <div className="flex flex-col min-h-screen h-full">
