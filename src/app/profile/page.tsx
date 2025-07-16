@@ -190,7 +190,7 @@ export default function ProfilePage() {
           <div className="card mb-6">
             <h2 className="text-xl font-semibold mb-4">Your Posts</h2>
             {posts.length === 0 ? (
-              <p className="text-gray-600 dark:text-gray-400">You haven't made any posts yet.</p>
+              <p className="text-gray-600 dark:text-gray-400">You have not made any posts yet.</p>
             ) : (
               posts.map((post) => {
                 const liked = user && post.likes && post.likes.includes(user.id);
@@ -258,11 +258,7 @@ export default function ProfilePage() {
           {/* <button onClick={handleLogout} className="btn btn-primary mt-4">Logout</button> */}
         </div>
       </main>
-      <footer className="bg-gray-100 dark:bg-gray-900 py-6">
-        <div className="container mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
-          <p>© 2025 SocialApp. All rights reserved.</p>
-        </div>
-      </footer>
+      
     </div>
   );
 }
