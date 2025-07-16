@@ -62,7 +62,7 @@ export default function UserProfilePage() {
           <div className="card mb-6">
             <h2 className="text-xl font-semibold mb-4">Posts</h2>
             {posts.length === 0 ? (
-              <p className="text-gray-600 dark:text-gray-400">This user hasn't made any posts yet.</p>
+              <p className="text-gray-600 dark:text-gray-400">This user has not made any posts yet.</p>
             ) : (
               posts.map((post) => (
                 <div key={post.id} className="mb-4 p-4 border rounded flex flex-col md:flex-row gap-4 items-start bg-white dark:bg-gray-800">
